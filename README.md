@@ -1,2 +1,4 @@
 # desenvolve-introducao-web
-para a entrega das atividades
+Projeto Desenvolve - Itabira
+Programação básica de Web
+PDITA389
