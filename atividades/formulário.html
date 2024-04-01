@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form method="post" action="processo-pesquisa">
+        <section>
+            <h2>Dados Pessoais</h2>
+            <p>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="e-mail">E-mail:</label>
+                <input id="e-mail" type="email" placeholder="Digite seu email">
+            </p>
+            <p>
+                <label for="tele">Telefone:</label>
+                <input id="tele" type="tel" placeholder="Digite seu telefone">
+            </p>
+        </section>
+        <section>
+            <h2>Dados da Pesquisa</h2>
+            <p>
+                <strong>1. Qual a sua satisfação geral com o nosso serviço?</strong>
+                <p>
+                  <input type="radio" name="sas-geral" id="mtsatisfeito">
+                  <label for="mtsatisfeito">Muito satisfeito</label>
+                </p>
+                <p>
+                  <input type="radio" name="sas-geral" id="satisfeito">
+                  <label for="satisfeito">Satisfeito</label>
+                </p>
+                <p>
+                  <input type="radio" name="sas-geral" id="insatisfeito">
+                  <label for="insatisfeito">Insatisfeito</label>
+                </p>
+                <p>
+                  <input type="radio" name="sas-geral" id="mtinsatisfeito">
+                  <label for="mtinsatisfeito">Muito insatisfeito</label>
+                </p>
+            </p>
+            <p>
+                <strong>2. Em que medida você recomendaria o nosso serviço a um amigo ou familiar?</strong>
+                <p>
+                    <input type="radio" name="medida" id="0">
+                    <label for="0">0 - Não recomendaria</label>
+                </p>
+                <p>
+                    <input type="radio" name="medida" id="1">
+                    <label for="1">1 - Provalmente não recomendaria</label>
+                </p>
+                <p>
+                    <input type="radio" name="medida" id="2">
+                    <label for="2">2 - Neutro</label>
+                </p>
+                <p>
+                    <input type="radio" name="medida" id="3">
+                    <label for="3">3 - Provalmente recomendaria</label>
+                </p>
+                <p>
+                    <input type="radio" name="medida" id="4">
+                    <label for="4">4 - Definitivamente recomendaria</label>
+                </p>
+
+            </p>
+            <p>
+                <strong>3. Qual a sua região?</strong>
+                <p>
+                 <select name="estado" id="estado">
+                    <option>Norte</option>
+                    <option>Nordeste</option>
+                    <option>Sudeste</option>
+                    <option>Centro-Oeste</option>
+                    <option>Sul</option>
+                 </select>
+                </p>
+            </p>
+            <p>
+                <input type="checkbox" id="compartilhar">
+                <label for="compartilhar">Autorizo o compartilhamento dos dados com terceiros</label>
+            </p>
+        </section>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
