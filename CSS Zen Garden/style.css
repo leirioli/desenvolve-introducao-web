@@ -4,3 +4,40 @@ cor de fundo: #E5BA83
 cor da fonte: #2E292D
 cor de destaque: #69382D
 */
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+p {
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.summary , .preamble {
+    text-align: center;
+}
+
+#zen-supporting p {
+    line-height: 1.5;
+}
+
+abbr {
+    font-variant: small-caps;
+}
