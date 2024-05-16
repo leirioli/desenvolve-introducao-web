@@ -167,3 +167,50 @@ h3 {
 abbr {
     font-variant: small-caps;
 }
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+  #design-selection {
+    position: static;
+    width: 100%;
+  }
+
+  .explanation {
+    border-right: none;
+    width: 100%;
+  }
+
+  #zen-intro {
+    height: auto;
+  }
+
+  .participation {
+    flex-direction: column;
+  }
+
+  p {
+    text-indent: 0;
+  }
+}
+
+@media print {
+  html {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #zen-intro header {
+    background-color: #e5ba83;
+    color: #2e292d;
+  }
+
+  #design-selection {
+    position: static;
+    width: 100%;
+  }
+
+  .explanation {
+    border-right: none;
+    width: 100%;
+  }
+}
