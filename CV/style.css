@@ -1,0 +1,454 @@
+/* DEFINIÇÕES */
+
+/* fontes:
+para titulo -> Gentle
+para o restante do texto -> Coves */
+
+/* cores:
+principal -> #F0F0F2
+secundária -> #6F7BBF
+destaque -> #79A3D9 */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Okine;
+  src: url(/fontes/MADEOkineSansPERSONALUSE-Medium.otf);
+}
+
+@font-face {
+  font-family: Tommy Soft;
+  src: url(/fontes/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf);
+}
+
+/* ESTRUTURAÇÃO NORMAL */
+
+html {
+  background-color: #f0f0f2;
+  color: black;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 150px);
+}
+
+html h1,
+h2 {
+  font-family: "Okine", Helvetica, sans-serif;
+}
+
+html p,
+ul,
+a {
+  font-family: "Tommy Soft", Arial;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #79a3d9;
+}
+
+/* MENU */
+
+nav {
+  background-color: #6f7bbf;
+  position: fixed;
+  width: 100%;
+  color: black;
+  opacity: 0.85;
+  top: 0;
+  height: 60px;
+  z-index: 13;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 150px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.379);
+}
+
+/* CORPO DO SITE */
+
+hr {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  border: 0;
+  border-top: 3px solid rgba(110, 110, 245, 0.623);
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20%;
+  z-index: 99;
+}
+
+/* APRESENTAÇÃO (CABEÇALHO) */
+
+.introducao {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto img {
+  border-radius: 200px;
+  margin-bottom: 20px;
+}
+
+.nome {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.apresentação {
+  font-size: 17px;
+  padding-left: 200px;
+  padding-right: 200px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.email {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.cidade {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+/* EDUCAÇÃO */
+
+.educação {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.educação h1 {
+  margin-bottom: 20px;
+}
+
+.instituicao1,
+.instituicao2,
+.instituicao3 {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.instituicao1 h2,
+.instituicao2 h2,
+.instituicao3 h2 {
+  margin-bottom: 20px;
+}
+
+.instituicao1 p,
+.instituicao2 p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.instituicao3 #curso {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.instituicao3 #conclusion {
+  font-size: 17px;
+}
+
+/* CERTIFICÕES */
+
+.certificacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.certificacoes h1 {
+  margin-bottom: 20px;
+}
+
+.certificado {
+  font-size: 17px;
+}
+
+.certificado p {
+  margin-bottom: 20px;
+}
+
+/* EXPERIÊNCIA */
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.experiencia p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* HABILIDADES TÉCNICAS */
+
+.habilidades-tecnicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.habilidades-tecnicas h1 {
+  margin-bottom: 20px;
+}
+
+.habilidades-tecnicas ul li {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+  border-top: 1px black solid;
+  padding: 2%;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#contato .titulo-redes {
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+footer ul li {
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+}
+
+footer ul li:hover {
+  border-bottom: 1px solid black;
+  transform: translateY(-10px);
+}
+
+#copy {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* celular */
+
+nav input[type="checkbox"],
+nav .hamburger-lines {
+  display: none;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 700px) {
+  nav {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  nav .menu {
+    padding-top: 100px;
+    background: #6f7bbf;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #6f7bbf;
+  }
+
+  nav .menu li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+
+  .instituicao2 h2 {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .instituicao2 p,
+  .instituicao1 p {
+    font-size: 20px;
+  }
+
+  .instituicao3 #curso {
+    font-size: 20px;
+  }
+
+  .instituicao3 #conclusion {
+    font-size: 20px;
+  }
+
+  .cidade {
+    font-size: 20px;
+  }
+
+  .email {
+    font-size: 20px;
+  }
+
+  .experiencia {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .experiencia p {
+    font-size: 20px;
+  }
+
+  .apresentação {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+  }
+
+  .certificado {
+    font-size: 20px;
+  }
+
+  .habilidades-tecnicas ul li {
+    font-size: 18px;
+  }
+
+  .titulo-redes {
+    font-size: 25px;
+  }
+
+  footer ul li a img {
+    width: 70px;
+  }
+}
